@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FY-TATITRA.mg</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="d-flex justify-content-between align-items-center p-3 bg-light border-bottom">
+        <div class="d-flex align-items-center">
+            <div class="circle-animation"></div>
+            <h1 class="ml-2">FY-TATITRA.mg</h1>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <button class="btn btn-success" id="connect-btn">Se connecter</button>
+            <button class="btn btn-success" id="create-account-btn">Créer un compte</button>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <div class="row">
+                <div class="col-md-6 animated-text">
+                    <p>Bienvenu sur</p>
+                    <h1><span class="highlight">Fy</span><span class="highlight1">Tatitra</span></h1>
+                    <p>
+                        Nous avons créé cette plateforme pour vous, afin de vous offrir une gestion simplifiée et rapide de votre coopérative, avec des services garantis fiables, vous assurant ainsi une expérience client optimale et un gain de temps précieux.
+                    </p>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end position-relative">
+                    <div class="background">
+                        <img src="car.png" alt="Sprinter" class="img-fluid car-image" />
+                    </div>
+                </div>
+        </div>
+    </main>
+
+    <!-- Conteneur pour le modal de connexion -->
+    <div id="login-modal-container"></div>
+
+    <!-- Conteneur pour le modal de création de compte -->
+    <div id="create-account-modal-container"></div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

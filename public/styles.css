@@ -1,0 +1,302 @@
+body {
+    background-color: #f4f4f4;
+}
+
+.circle-animation {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #266fc2;
+    animation: pulse 1.5s infinite;
+    margin-right: 10px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.highlight {
+    color: #069e01;
+    font-weight: bold;
+    font-size: 7rem;
+}
+
+.highlight1 {
+    color: #262726;
+    font-weight: bold;
+    font-size: 7rem;
+}
+
+.animated-text{
+    margin-left: -100px;
+    width: 100%;
+    animation: fadeIn 1.5s ease-in-out;
+    animation: slideIn 1.5s ease-out;
+    h1{
+        font-size: 6em;
+        color : #333;                      
+        animation: slideIn 2.1s ease-out;
+    }
+    p{
+        font-size: 1.2rem;
+        color : #333;                      
+        margin-bottom: 10px;
+        animation: fadeIn 2s ease-in;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .btn-success {
+    background-color: #00268f;
+  }
+
+/* Taille et style du modal */
+.modal-content {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #818181;
+    color: white;
+}
+
+/* Contenu du modal avec fond d'image */
+.modal-image {
+    width: 50%;
+    background-color: #333;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.modal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+/* Formulaire avec ombre et grand format */
+.modal-form-content {
+    width: 50%;
+    background: linear-gradient(to right, #8f8f8f, #727272);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.modal-form-content h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.form-control-lg {
+    padding: 1rem;
+    font-size: 1.2rem;
+    background: #e0e0e0;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.form-control-lg:focus {
+    background: #fff;
+}
+
+.btn-primary {
+    background-color: #00268f;
+    /* border-color: #008f00; */
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+}
+
+.btn-primary:hover {
+    background-color: #00af00;
+    border-color: #00af00;
+}
+
+.close-modal-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    z-index: 10;
+    transition: color 0.3s;
+}
+
+.close-modal-btn:hover {
+    color: #ff5e5e;
+}
+
+/* Style de base pour la section de bienvenue */
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+/* Sur les écrans larges */
+@media (min-width: 768px) {
+    .welcome-section p {
+        max-width: 100%; /* Le texte s’étire jusqu'à la largeur complète de la section */
+    }
+}
+
+/* Sur les écrans plus petits */
+@media (max-width: 767px) {
+    .welcome-section p {
+        max-width: 90%; /* Ajustez pour éviter un défilement horizontal */
+    }
+}
+
+/* Container with green background on the right */
+.background {
+    background-color: #069e01; /* Green background color */
+    width: 90%; /* Width of the background */
+    height: 90vh; /* Height to cover part of the page */
+    position: absolute; /* Absolute positioning to allow precise placement */
+    top: -140px; /* Aligns background to the top */
+    right: -240px; /* Aligns background to the right */
+    z-index: -1;
+    margin-top: 90px; /* Places the background behind the image */
+}
+
+.car-image {
+    position: relative;
+    max-width: 170%; /* Ajuste la taille de l'image selon vos préférences */
+    margin-right: 0px;
+    margin-left: -170px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.modal-form-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#client-form, #cooperative-form {
+    padding: 20px;
+    background-color: #727272; /* Arrière-plan léger pour un look professionnel */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#cooperative-form {
+    display: none;
+}
+
+button.close-modal-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: #333;
+}
+
+#client-btn, #cooperative-btn {
+    margin: 0 10px;
+}
+
+.active-btn {
+    background-color: #069e01;
+    color: #069e01;
+}
+
+/* Style du bouton "CLIENT" et "COOPERATIVE" */
+.btn-outline-success {
+    color: #ffffff;
+    background-color: #6b6a7c;
+    width: 170px;
+    height: 30px;
+}
+
+.btn-outline-success:hover {
+    background-color: #069e01;
+    color: white;
+}
+
+/* Masquer les formulaires au début */
+#cooperative-form {
+    display: none;
+}
+
+/* Améliorations visuelles pour les formulaires */
+input.form-control-lg {
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    width: 400px;
+}
+
+.text-center .btn {
+    margin-top: 1rem;
+}
+
+.form-control1 {
+    height: 40px; /* Taille réduite */
+    padding: 5px 10px;
+    font-size: 14px; /* Taille de police réduite pour un look plus professionnel */
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    color: #495057; /* Couleur de texte plus douce */
+    transition: border-color 0.3s ease;
+    margin-left: 360px;
+}

@@ -1,0 +1,88 @@
+<!-- Formulaire de création de compte -->
+<div class="modal fade" id="createAccountModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content rounded-4 shadow-lg">
+            <!-- Bouton de fermeture -->
+            <button type="button" class="close-modal-btn" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            
+            <div class="modal-body p-0">
+                <!-- Section d'image de Sprinter -->
+                <div class="modal-image bg-image">
+                    <img src="car.png" alt="Taxi-brousse Sprinter" class="img-fluid">
+                </div>
+                <!-- Section de choix entre CLIENT ou COOPERATIVE en haut -->
+            <div class="d-flex justify-content-center mt-4">
+                <button type="button" id="client-btn" class="btn btn-outline-success mx-2">CLIENT</button>
+                <button type="button" id="cooperative-btn" class="btn btn-outline-success mx-2">COOPERATIVE</button>
+            </div>
+
+                <!-- Formulaire dynamique -->
+                <div id="client-form">
+                    <h3 class="modal-title mb-4 text-center text-white">Créer un compte Client</h3>
+                    <form id="clientForm">
+                        <div class="form-group mb-4">
+                            <input type="text" class="form-control1 form-control-lg" id="client-name" placeholder="Nom" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="text" class="form-control1 form-control-lg" id="client-prenom" placeholder="Prénom" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="password" class="form-control1 form-control-lg" id="client-password" placeholder="Mot de passe" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="email" class="form-control1 form-control-lg" id="client-email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="text" class="form-control1 form-control-lg" id="client-adresse" placeholder="Adresse" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="text" class="form-control1 form-control-lg" id="client-cin" placeholder="Numéro CIN" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="tel" class="form-control1 form-control-lg" id="client-tel" placeholder="Numéro téléphone" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="tel" class="form-control1 form-control-lg" id="client-tel-proche" placeholder="Numéro téléphone proche (facultatif)">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Créer le compte</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="cooperative-form" style="display: none;">
+                    <h3 class="modal-title mb-4 text-center text-white">Créer un compte Coopérative</h3>
+                    <form id="cooperativeForm">
+                        <div class="form-group mb-4">
+                            <input type="text" class="form-control1 form-control-lg" id="cooperative-nif" placeholder="NIF" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="text" class="form-control1 form-control-lg" id="cooperative-stat" placeholder="Stat" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="text" class="form-control1 form-control-lg" id="cooperative-name" placeholder="Nom de la coopérative" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="text" class="form-control1 form-control-lg" id="cooperative-centre" placeholder="Votre Centre" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="email" class="form-control1 form-control-lg" id="cooperative-email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="tel" class="form-control1 form-control-lg" id="cooperative-tel" placeholder="Numéro téléphone" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="password" class="form-control1 form-control-lg" id="cooperative-password" placeholder="Mot de passe" required>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Créer le compte</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
